@@ -9,14 +9,16 @@ let score;
 var grade;
 
 // 입력값 유효성 검사 (도전 과제)
-if (isNaN(score) || score < 0 || score > 100) {
+if (!isNaN(score) || score < 0 || score > 100) {
   console.log("Invalid score! Please enter a number between 0 and 100.");
 } else {
   // 유효한 점수인 경우에만 아래 로직을 순서대로 실행
 
   // 최종점수 계산
   score = input;
-  score += 5;
+  //   score++; // 1점 증가 (도전과제)
+  //   score += 5; // 5점 보너스 추가
+  score *= 1.1; // 10% 가산 (도전과제)
   if (score > 100) {
     score = 100; // (도전과제) 보너스 점수 포함 100점 넘을경우 점수 제한
   }
