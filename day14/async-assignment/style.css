@@ -1,0 +1,79 @@
+/* 전체 페이지에 부드러운 폰트와 배경색 적용 */
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* 컨테이너 스타일링: 그림자, 둥근 모서리, 패딩 추가 */
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* 제목 스타일 */
+h1 {
+  color: #343a40;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* 입력 필드 스타일 */
+#timerInput.form-control {
+  height: 48px;
+  border-radius: 8px;
+}
+
+#timerInput.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* 버튼 스타일: 둥근 모서리, 크기, 호버 효과 */
+#startTimer.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+#startTimer.btn:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#startTimer.btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* 타이머 디스플레이 영역 스타일 */
+#timerDisplay {
+  font-size: 1.75rem; /* 28px */
+  margin-top: 2rem;
+  color: #495057;
+  font-weight: 500;
+  min-height: 40px; /* 내용이 없어도 높이를 유지하여 레이아웃 깨짐 방지 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 에러 메시지 스타일 */
+.error {
+  color: #dc3545;
+  font-weight: 600;
+}

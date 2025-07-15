@@ -1,0 +1,84 @@
+/* 전체 페이지에 부드러운 폰트와 배경색 적용 */
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* 컨테이너 스타일링: 그림자, 둥근 모서리, 패딩 추가 */
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* 제목 스타일 */
+h1 {
+  color: #343a40;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* 버튼 스타일 */
+#fetchPosts.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+/* 출력 영역 스타일 */
+#output {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+/* 개별 게시물 스타일 */
+.post {
+  border: 1px solid #e9ecef;
+  border-left: 4px solid #0d6efd; /* 왼쪽 파란색 테두리로 강조 */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.post:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.post strong {
+  color: #0d6efd;
+}
+
+/* 에러 메시지 스타일 */
+.error {
+  color: #dc3545;
+  font-weight: 600;
+  text-align: center;
+}
+
+.post.error-post {
+  border-left-color: #dc3545; /* 에러 게시물은 빨간색 테두리 */
+}
+
+.post.error-post strong {
+  color: #dc3545;
+}
+
+/* 로딩 스피너 스타일 */
+#loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
