@@ -1,0 +1,47 @@
+<!-- index.html (포스트 목록 화면) -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px auto;
+        padding: 0 20px;
+        max-width: 800px;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        padding: 15px;
+        margin: 8px 0;
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+      li:hover {
+        background: #e9ecef;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Post List</h1>
+    <!-- 포스트 목록이 동적으로 추가될 영역 -->
+    <ul id="post-list"></ul>
+
+    <!-- JavaScript 파일 로드 -->
+    <script src="list.js"></script>
+  </body>
+</html>

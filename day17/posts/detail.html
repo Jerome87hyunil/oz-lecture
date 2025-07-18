@@ -1,0 +1,54 @@
+<!-- detail.html (포스트 상세 화면) -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Detail</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px auto;
+        padding: 0 20px;
+        max-width: 800px;
+        background-color: #f4f4f4;
+      }
+      h1 {
+        color: #333;
+      }
+      #post-detail {
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      #post-detail h3 {
+        margin-top: 0;
+        color: #0056b3;
+      }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Post Detail</h1>
+    <!-- 포스트 상세 내용이 동적으로 추가될 영역 -->
+    <div id="post-detail">
+      <p>Loading post...</p>
+    </div>
+    <!-- 목록으로 돌아가는 링크 -->
+    <a href="index.html">Back to List</a>
+
+    <!-- JavaScript 파일 로드 -->
+    <script src="detail.js"></script>
+  </body>
+</html>
